@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="styles/main.min.css">
 </head>
+
 <body>
-	сборка работает
+
+	<header class="header">
+			<h1 class="visually-hidden">Туристическая фирма румтибет</h1>
+			<a href="index.html" class="logo">
+				<img src="img/logo-white.svg" alt="румтибет" width="84" height="44">
+			</a>
+
+			<button type="button" class="nav-toggle">
+				<span class="visually-hidden">показать/скрыть меню</span>
+			</button>
+
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Про гида</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Программа тура</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Стоимость</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<button type="button" class="button">Консультация</button>
+	</header>
+
+	<main>
+		<div class="hero">
+			<p class="title">Насладись прогулкой в горах
+				с командой единомышленников</p>
+			<form action="#" class="form">
+				<label for="elem-1">
+					<span class="visually-hidden">Локация для тура</span>
+					<select name="elem-1" id="elem-1" class="form__select">
+						<option>Локация для тура</option>
+						<option value="1">Локация 1</option>
+						<option value="2">Локация 2</option>
+					</select>
+					<span class="form__notes">Выберите из списка</span>
+				</label>
+
+				<label for="elem-2" class="form__inner">
+					<span class="visually-hidden">Дата похода</span>
+					<input type="text" id="elem-2" class="form__input" placeholder="Дата похода">
+					<span class="form__notes">укажите диапазон</span>
+				</label>
+
+				<label for="elem-3" class="form__inner">
+					<span class="visually-hidden">Количество участников</span>
+					<select name="elem-3" id="elem-3" class="form__select">
+						<option>Участники</option>
+						<option value="4">4</option>
+						<option value="8">8</option>
+					</select>
+					<span class="form__notes">минимум 4 человека</span>
+				</label>
+
+				<div class="form__inner">
+					<button type="submit" class="button button--light button--big">Найти программу</button>
+				</div>
+
+			</form>
+			<a href="#" class="button button--light button--big">Найти программу</a>
+		</div>
+	</main>
+
+	<footer class="footer wrap">
+		footer
+	</footer>
 </body>
+
 </html>

@@ -3,10 +3,12 @@ body::before {
 
 	// позиционирование
 	position: fixed;
+	width: 100%;
+	max-width: 1180px;
 	top: 0;
-	right: 0;
 	bottom: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
 
 	// отменяем взаимодействие с сеткой
 	pointer-events: none;
@@ -40,8 +42,21 @@ body::before {
 @media (min-width: 768px) {
 	body::before {
 		// от края контента до первой колоки
-		--grid-sides: 24px;
+		--grid-sides: 27px;
+		// расстояние между колонками
+		--grid-gutter: 27px;
 		// количество колонок
 		--grid-colums: 8;
+	}
+}
+
+@media (min-width: 1180px) {
+	body::before {
+		// от края контента до первой колоки
+		--grid-sides: 16px;
+		// расстояние между колонками
+		--grid-gutter: 16px;
+		// количество колонок
+		--grid-colums: 12;
 	}
 }

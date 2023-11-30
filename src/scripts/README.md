@@ -1,1 +1,1 @@
-Ваш JS код
+JavaScript

@@ -8,7 +8,17 @@ $min-md: 768px;
 $max-lg: 989px;
 $min-lg: 990px;
 
-$max-xl: 1200px;
-$min-xl: 1201px;
+$max-xl: 1180px;
+$min-xl: 1181px;
 
 $min-xxl: 1920px;
+
+:root {
+	--transition-duration: 150ms;
+	--transition-function: ease-in-out;
+
+	--text: #18121E;
+	--light: #FDFDFD;
+	--primary: #1A3E3E;
+	--secondary: #F2BE22;
+}
